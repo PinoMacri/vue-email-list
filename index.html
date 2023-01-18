@@ -13,7 +13,7 @@
 
 <body>
     <div id="root">
-        <p v-if="!names.length">Loading . . .
+        <p v-if="names.length < 10">Loading . . .
         </p>
         <ul v-else-if ="names.length === 10">
             <li v-for="name in names">{{name}}</li>
